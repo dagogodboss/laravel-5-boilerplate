@@ -9,7 +9,7 @@ return [
         /*
          * Whether the registration captcha is on or off
          */
-        'registration' => env('REGISTRATION_CAPTCHA_STATUS', false),
+        'registration' => env('REGISTRATION_CAPTCHA_STATUS', true),
     ],
 
     /*
@@ -31,12 +31,12 @@ return [
         /*
          * Whether or not the user has to confirm their email when signing up
          */
-        'confirm_email' => env('CONFIRM_EMAIL', false),
+        'confirm_email' => env('CONFIRM_EMAIL', true),
 
         /*
          * Whether or not the users email can be changed on the edit profile screen
          */
-        'change_email' => env('CHANGE_EMAIL', false),
+        'change_email' => env('CHANGE_EMAIL', true),
 
         /*
          * The name of the super administrator role

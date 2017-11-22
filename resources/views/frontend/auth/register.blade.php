@@ -112,6 +112,6 @@
 
 @push('after-scripts')
     @if (config('access.captcha.registration'))
-        {!! Captcha::script() !!}
+        {!! Captcha::script()!!}
     @endif
 @endpush
