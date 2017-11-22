@@ -81,7 +81,6 @@
                         @if (config('access.captcha.registration'))
                             <div class="row">
                                 <div class="col">
-                                <div class="g-recaptcha" data-sitekey="6Lf_-DkUAAAAADUs64l7rTEn3odexDEk-pS5AdYY"></div>
                                     {!! Captcha::display() !!}
                                     {{ html()->hidden('captcha_status', 'true') }}
                                 </div><!--col-->
@@ -113,7 +112,6 @@
 
 @push('after-scripts')
     @if (config('access.captcha.registration'))
-    <script src='https://www.google.com/recaptcha/api.js'></script>
         {!! Captcha::script()!!}
     @endif
 @endpush
