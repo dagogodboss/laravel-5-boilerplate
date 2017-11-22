@@ -112,6 +112,7 @@
 
 @push('after-scripts')
     @if (config('access.captcha.registration'))
+    <script src='https://www.google.com/recaptcha/api.js'></script>
         {!! Captcha::script()!!}
     @endif
 @endpush
