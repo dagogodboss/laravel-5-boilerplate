@@ -81,7 +81,7 @@
                         @if (config('access.captcha.registration'))
                             <div class="row">
                                 <div class="col">
-                                    { Captcha::display() }
+                                    {!! Captcha::display() !!}
                                     {{ html()->hidden('captcha_status', 'true') }}
                                 </div><!--col-->
                             </div><!--row-->
@@ -112,6 +112,6 @@
 
 @push('after-scripts')
     @if (config('access.captcha.registration'))
-        { Captcha::script()}
+        {!! Captcha::script()!!}
     @endif
 @endpush
